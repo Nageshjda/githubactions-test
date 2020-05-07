@@ -15,6 +15,7 @@ jobs:
 
   run-windows-commands:
     runs-on: windows-latest
+    needs: ["run-shell-commands"]
     steps:
       - name: present working directory
         run: pwd
