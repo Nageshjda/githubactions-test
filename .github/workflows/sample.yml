@@ -9,3 +9,8 @@ jobs:
     - name: Display the path
       run: echo $PATH
       shell: bash
+    - name: Display the python commands
+      run: |
+        import os
+        print(os.environ['PATH'])
+      shell: python
