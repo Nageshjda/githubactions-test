@@ -14,4 +14,9 @@ jobs:
       - name: greeting time
         run: echo "${{ steps.greet.outputs.time}}"
         
+      - name: list of files
+        run: | 
+          pwd
+          ls -a
+        
 
